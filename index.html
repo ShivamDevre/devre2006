@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shivam — Professional Portfolio</title>
+  <meta name="description" content="Shivam Subhash Devre — B.E. (Electrical). Portfolio: education, projects, skills, operational experience." />
+  <meta name="theme-color" content="#0b1220" />
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --panel:#0f1724;
+      --muted:#9aa6b2;
+      --accent:#58a6ff;
+      --accent-2:#22d3ee;
+      --glow: 0 10px 40px rgba(88,166,255,0.08);
+      --radius:14px;
+      --maxw:1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:Inter,system-ui,Segoe UI,Roboto,Arial;
+      background: radial-gradient(1200px 600px at 10% 10%, rgba(34,211,238,0.06), transparent 6%),
+                  radial-gradient(800px 400px at 90% 80%, rgba(88,166,255,0.04), transparent 8%),
+                  var(--bg);
+      color:#e6eef6;
+      padding:28px 12px;
+    }
+
+    .wrap{max-width:var(--maxw);margin:0 auto}
+
+    .nav{
+      display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;
+      background:rgba(255,255,255,0.02);
+      padding:12px;border-radius:18px;
+      border:1px solid rgba(255,255,255,0.03);
+      margin-bottom:28px;
+      backdrop-filter: blur(6px);
+    }
+    .nav a{
+      padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700;
+      color:var(--accent);background:rgba(12,18,30,0.45);
+      border:1px solid rgba(88,166,255,0.08);
+      transition:.2s;
+    }
+    .nav a.primary{
+      background:linear-gradient(90deg,var(--accent),var(--accent-2));
+      color:#051122;border:0;
+    }
+
+    .hero{
+      text-align:center;padding:48px 18px;border-radius:18px;margin-bottom:22px;
+      background:rgba(255,255,255,0.02);
+      border:1px solid rgba(255,255,255,0.02);
+    }
+
+    .grid{display:grid;grid-template-columns:1fr;gap:18px}
+    @media(min-width:880px){.grid{grid-template-columns:1fr 1fr}}
+
+    .card{
+      background:rgba(255,255,255,0.02);
+      border-radius:var(--radius);
+      padding:20px;
+    }
+
+    .media{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+
+    .avatar{
+      width:140px;height:140px;border-radius:50%;
+      object-fit:cover;
+      border:4px solid rgba(255,255,255,0.05);
+      box-shadow:0 10px 30px rgba(88,166,255,0.06);
+    }
+
+    .box{
+      background:rgba(88,166,255,0.03);
+      padding:12px;border-radius:10px;
+      border-left:4px solid rgba(88,166,255,0.16);
+      color:var(--muted)
+    }
+
+    .pill{
+      display:inline-block;padding:8px 12px;border-radius:999px;
+      background:rgba(88,166,255,0.06);color:var(--accent);
+      border:1px solid rgba(88,166,255,0.1);font-weight:700;
+    }
+
+    .accent-line{
+      height:4px;background:linear-gradient(90deg,rgba(88,166,255,0.9),rgba(34,211,238,0.8));
+      border-radius:6px;margin-bottom:10px;width:140px;
+    }
+
+    footer{margin-top:22px;text-align:center;color:var(--muted)}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <nav class="nav">
+      <a class="primary">About</a>
+      <a>Education</a>
+      <a>Projects</a>
+      <a>Hobbies</a>
+      <a>Skills</a>
+      <a>Achievements</a>
+      <a>Contact</a>
+    </nav>
+
+    <header class="hero">
+      <h1>Shivam — B.E. (Electrical)</h1>
+      <p>Practical engineering & operations — four years running a <strong>family business</strong> with responsibility for procurement, planning, inventory & maintenance.</p>
+    </header>
+
+    <main>
+      <div class="grid">
+
+        <!-- ABOUT SECTION -->
+        <section class="card">
+          <h2>About — Professional Summary</h2>
+          <div class="accent-line"></div>
+
+          <div class="media">
+            <img src="photo.jpg" class="avatar" alt="Shivam Profile Photo">
+
+            <div>
+              <p><strong style="color:#eaf4ff">Shivam Subhash Devre</strong> — Electrical Engineering undergraduate with strong fundamentals in circuits, operations & documentation.</p>
+
+              <div class="box">
+                <strong style="color:#eaf4ff">Core strengths</strong>
+                <ul>
+                  <li>Operational leadership in <strong>family business</strong></li>
+                  <li>Vendor management & procurement</li>
+                  <li>Technical documentation & SOP creation</li>
+                  <li>Structured troubleshooting & problem solving</li>
+                </ul>
+              </div>
+
+              <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+                <span class="pill">Operations</span>
+                <span class="pill">Circuit Theory</span>
+                <span class="pill">Mathematics</span>
+                <span class="pill">Best Head Boy</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section class="card">
+          <h2>Education</h2>
+          <div class="accent-line"></div>
+
+          <h3>Sanjivani College of Engineering — B.E. (Electrical)</h3>
+          <p>Focused on power systems, circuits & control systems.</p>
+
+          <div class="box">
+            <strong>Key Subjects</strong>
+            <ul>
+              <li>Circuit Theory</li>
+              <li>Power Systems</li>
+              <li>Control Systems</li>
+            </ul>
+          </div>
+
+          <h3 style="margin-top:14px">Bharat Ratna Mother Teresa English School</h3>
+          <p>Grades 5–10 — strong Mathematics & logical foundation.</p>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="card">
+          <h2>Projects & Practical Work</h2>
+          <div class="accent-line"></div>
+
+          <h3>Family Business — End-to-End Operations</h3>
+          <p>Managed procurement, inventory, scheduling & maintenance at family-owned unit.</p>
+
+          <div class="box">
+            <strong>Operational Highlights</strong>
+            <ul>
+              <li>Improved inventory accuracy</li>
+              <li>Reduced material wastage</li>
+              <li>Better maintenance scheduling</li>
+            </ul>
+          </div>
+
+          <h3 style="margin-top:12px">Invoice & Billing Tool (Web)</h3>
+          <p>Made a simple invoice generator for small shops.</p>
+
+          <h3 style="margin-top:12px">Python Utilities</h3>
+          <p>Electrical calculations automation (impedance, PF correction).</p>
+        </section>
+
+        <!-- HOBBIES -->
+        <section class="card">
+          <h2>Hobbies & Interests</h2>
+          <div class="accent-line"></div>
+
+          <h3>Cricket</h3>
+          <p>Improves focus, teamwork & decision-making.</p>
+
+          <h3>AI & Prompt Engineering</h3>
+          <p>Experimenting with automation & documentation workflows.</p>
+
+          <div class="box">
+            <strong>Achievement</strong>
+            <p>Winner — Prompt Mania Competition.</p>
+          </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="card">
+          <h2>Skills</h2>
+          <div class="accent-line"></div>
+
+          <h3>Technical</h3>
+          <ul>
+            <li>Circuit Analysis</li>
+            <li>Applied Mathematics</li>
+            <li>Basic Web Dev (HTML/CSS/JS)</li>
+            <li>Circuit Simulation</li>
+          </ul>
+
+          <h3 style="margin-top:10px">Professional</h3>
+          <ul>
+            <li>Vendor Coordination</li>
+            <li>Operations Management</li>
+            <li>Documentation</li>
+            <li>Prompt Engineering</li>
+          </ul>
+        </section>
+
+        <!-- ACH & CONTACT -->
+        <section class="card">
+          <h2>Achievements</h2>
+          <div class="accent-line"></div>
+
+          <div class="box">
+            <ul>
+              <li>Best Head Boy of the Year</li>
+              <li>Winner — Prompt Mania</li>
+              <li>Recognized for improvements in family business operations</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Contact</h2>
+          <div class="accent-line"></div>
+
+          <div class="box">
+            <ul>
+              <li><strong>Email:</strong> your.email@example.com</li>
+              <li><strong>Phone:</strong> +91-XXXXXXXXXX</li>
+              <li><strong>LinkedIn:</strong> linkedin.com/in/yourprofile</li>
+            </ul>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <footer>
+      <p>© Shivam — Professional Portfolio</p>
+    </footer>
+
+  </div>
+</body>
+</html>
